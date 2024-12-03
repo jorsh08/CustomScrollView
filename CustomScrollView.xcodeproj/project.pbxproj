@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		67AB606E2CFCEF66002BA035 /* CustomScrollViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB606D2CFCEF66002BA035 /* CustomScrollViewApp.swift */; };
-		67AB60702CFCEF66002BA035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB606F2CFCEF66002BA035 /* ContentView.swift */; };
 		67AB60722CFCEF67002BA035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AB60712CFCEF67002BA035 /* Assets.xcassets */; };
 		67AB60752CFCEF67002BA035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AB60742CFCEF67002BA035 /* Preview Assets.xcassets */; };
 		67AB607F2CFCEF67002BA035 /* CustomScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB607E2CFCEF67002BA035 /* CustomScrollViewTests.swift */; };
 		67AB60892CFCEF67002BA035 /* CustomScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB60882CFCEF67002BA035 /* CustomScrollViewUITests.swift */; };
 		67AB608B2CFCEF67002BA035 /* CustomScrollViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB608A2CFCEF67002BA035 /* CustomScrollViewUITestsLaunchTests.swift */; };
+		67AB609A2CFCF0F1002BA035 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB60992CFCF0F1002BA035 /* Home.swift */; };
+		67AB609E2CFCF129002BA035 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB609D2CFCF129002BA035 /* TabModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		67AB606A2CFCEF66002BA035 /* CustomScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AB606D2CFCEF66002BA035 /* CustomScrollViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollViewApp.swift; sourceTree = "<group>"; };
-		67AB606F2CFCEF66002BA035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67AB60712CFCEF67002BA035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AB60742CFCEF67002BA035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67AB607A2CFCEF67002BA035 /* CustomScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		67AB60842CFCEF67002BA035 /* CustomScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AB60882CFCEF67002BA035 /* CustomScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollViewUITests.swift; sourceTree = "<group>"; };
 		67AB608A2CFCEF67002BA035 /* CustomScrollViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67AB60992CFCF0F1002BA035 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		67AB609D2CFCF129002BA035 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		67AB606C2CFCEF66002BA035 /* CustomScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				67AB60982CFCF0DE002BA035 /* Model */,
+				67AB60972CFCF0D7002BA035 /* View */,
 				67AB606D2CFCEF66002BA035 /* CustomScrollViewApp.swift */,
-				67AB606F2CFCEF66002BA035 /* ContentView.swift */,
 				67AB60712CFCEF67002BA035 /* Assets.xcassets */,
 				67AB60732CFCEF67002BA035 /* Preview Content */,
 			);
@@ -125,6 +128,22 @@
 				67AB608A2CFCEF67002BA035 /* CustomScrollViewUITestsLaunchTests.swift */,
 			);
 			path = CustomScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		67AB60972CFCF0D7002BA035 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67AB60992CFCF0F1002BA035 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67AB60982CFCF0DE002BA035 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AB609D2CFCF129002BA035 /* TabModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AB60702CFCEF66002BA035 /* ContentView.swift in Sources */,
+				67AB609E2CFCF129002BA035 /* TabModel.swift in Sources */,
+				67AB609A2CFCF0F1002BA035 /* Home.swift in Sources */,
 				67AB606E2CFCEF66002BA035 /* CustomScrollViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
